@@ -1,5 +1,5 @@
 /**
- * Sends emails with data from a google sheet. 
+ * Sends emails from your Google account sourced with data from a google sheet. 
  */
 function sendEmails() {
     //get reminder spreadsheet
