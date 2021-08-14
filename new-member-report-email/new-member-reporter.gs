@@ -4,18 +4,19 @@
 function sendEmails() {
     /* 
         foreach sheet    
-            - auth
-            - get contents of report tab
+            - auth. built-in on first run: https://developers.google.com/apps-script/guides/services/authorization
+            - get config. 1qi8oN4cgtB6UVZa-KiDBVgAjoJHcHtD6cjrLp7HkFE8
+            - get contents of report tab. 
             - create email message
             - get recipients
             - send email
     */
 
     //open issues
-    //todo: design config storage: easily accessible
+    //todo: design config storage: easily accessible. 
     
     //get reminder spreadsheet
-    var sourceSheetId = "<your-google-sheet-id>", //the sheet Id with emails and messages
+    const sourceSheetId = "<your-google-sheet-id>", //the sheet Id with emails and messages
         sourceRange = "A2:C50"; //the range of all topics
 
     //get data 
